@@ -1,0 +1,72 @@
+@scope(.Drag){
+  :scope{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    @media (max-width:768px) {
+      margin-top:30vh;
+    }
+  }
+  @scope(form){
+    :scope{
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+    @scope (.DragGame) {
+      :scope {
+        width: 80vw;
+        /* flex */
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+      @scope(div) {
+        :scope{
+          border-radius: 25px;
+          text-align: center;
+          /* min-width */
+          min-width: 25vw;
+          min-height: 32.5vh;
+          @media (prefers-color-scheme: light) {
+            border: #EEE 1px solid;
+            box-shadow: 0px 0px 10px #00000044;
+          }
+          @media (max-width: 768px) {
+            min-width: 80vw;
+          }
+          /* color */
+          background-color:#FFF;
+        }
+        h2 {
+          color: #000;
+        }
+        @scope (ul) {
+          :scope {
+            width: 100%;
+            text-align: center;
+            list-style: none;
+            /* flex */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          li {
+            color: #FFF;
+            margin-bottom: 5px;
+            width: 80%;
+            border-radius: 5px;
+            background-color: #000;
+          }
+        }
+      }
+    }
+    button {
+      margin: 5px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@scope(.gamesCardPlace){
+    :scope{
+        direction: rtl;
+        /* size */
+        width: 100vw;
+        height: 75vh;
+        /* positon */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        /* grid */
+        display: grid;
+        justify-items: center;
+        @media (max-width:425px) {
+            grid-template-columns: repeat(1, 1fr);            
+            gap: 50%;       
+        }
+        @media(max-width:768px) and (min-width:425px)
+        {
+            width: 75%;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20%;            
+        }
+        @media (min-width:768) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    div{
+        height: fit-content;
+    }
+}

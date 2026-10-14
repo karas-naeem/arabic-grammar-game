@@ -1,0 +1,11 @@
+.about {
+  text-align: center;
+  /* size */
+  width: 100vw;
+  height: 75vh;
+  /* positon */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,29 @@
+@scope (.Complete) {
+  :scope {
+    direction: rtl;
+  }
+  @scope (form) {
+    :scope {
+      width: 60vw;
+      /* flex */
+      display: flex;
+      flex-direction: column;
+    }
+    @scope (.Question) {
+      input {
+        appearance: none;
+        text-align: center;
+        border: none;
+        /* size */
+        width: 10ch;
+        height: 5ch;
+        /* color */
+        background: none;
+        color: var(--foreground);
+        &::placeholder {
+          color: var(--foreground);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@scope (div) {
+  :scope {
+    direction: rtl;
+    /* position */
+    position: absolute;
+    left: 50%;
+    top: 25%;
+  }
+  ul {
+    list-style: decimal;
+  }
+}
