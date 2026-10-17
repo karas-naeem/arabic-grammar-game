@@ -16,11 +16,21 @@ export default function Result() {
   return (
     <>
       <h2>النتيجة:{number}/15</h2>
-      <button>
-        <Link href="/games/1/correct"  style={{
-        color:"#000"
-      }}>
-            الإجابات الصحيحة
+      <button
+        style={{
+          border: "none",
+        }}
+      >
+        <Link
+          href="/games/1/correct"
+          style={{
+            padding: "5px",
+            borderRadius: "5px",
+            color: "var(--background)",
+            background: "var(--foreground)",
+          }}
+        >
+          الإجابات الصحيحة
         </Link>
       </button>
     </>

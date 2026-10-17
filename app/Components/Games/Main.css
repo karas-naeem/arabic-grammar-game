@@ -6,4 +6,8 @@ button[type=submit]{
   /* padding */
   padding-left: 12.5px;
   padding-right: 12.5px;
+  @media (prefers-color-scheme: light) {
+    border: none;
+    box-shadow: 0px 0px 5px 1px #00000088;
+  }
 }

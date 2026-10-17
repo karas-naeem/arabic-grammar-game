@@ -13,8 +13,9 @@ export default function AboutPage()
                 filter:"invert()"
             }} width={200} height={200}/>
             <p>
-                مستودع المشروع: <Link href="" style={{
-                    textDecoration:"underline"
+                مستودع المشروع: <Link href="https://github.com/karas-naeem/arabic-grammar-game" style={{
+                    textDecoration:"underline",
+                    color:"var(--foreground)"
                 }}>رابط مستودع المشروع</Link>
             </p>
         </div>

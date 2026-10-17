@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function CorrectAnswers() {
   return (
-    <div>
+    <div className="correct-answers">
       <ul>
         <li>الفعل</li>
         <li>الفاعل</li>
