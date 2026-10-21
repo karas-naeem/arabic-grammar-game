@@ -9,9 +9,7 @@ export default function AboutPage()
             <h1>
                 هذا الموقع صنع بواسطة طالب مدرسة أبو العز الحريري بنين (كاراس نعيم)
             </h1>
-            <Image src="logo.svg" alt="صورة المشروع" style={{
-                filter:"invert()"
-            }} width={200} height={200}/>
+            <Image src="logo.svg" alt="صورة المشروع" className="logoImage" width={200} height={200}/>
             <p>
                 مستودع المشروع: <Link href="https://github.com/karas-naeem/arabic-grammar-game" style={{
                     textDecoration:"underline",

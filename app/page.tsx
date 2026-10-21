@@ -13,7 +13,6 @@ export default function Home() {
           height={200}
           alt="شعار الموقع"
         />
-        <p>نحو عربي</p>
       </div>
       <div className="games">
         <h2>الألعاب</h2>

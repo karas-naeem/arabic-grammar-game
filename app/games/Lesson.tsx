@@ -21,7 +21,7 @@ export default function Lesson()
                 height:"50vh"
             }} allowFullScreen={true}/>
             <button type="submit">
-                تمَّ
+                التالي
             </button>
         </form>
     );

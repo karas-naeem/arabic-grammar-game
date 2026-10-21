@@ -14,11 +14,15 @@ export default function Result() {
     });
   });
   return (
-    <>
-      <h2>النتيجة:{number}/15</h2>
+    <div style={{
+      textAlign:"center",
+    }}>
+      <h2>النتيجة:{number}/16</h2>
       <button
         style={{
+          // box model
           border: "none",
+          margin:"5px",
         }}
       >
         <Link
@@ -33,6 +37,6 @@ export default function Result() {
           الإجابات الصحيحة
         </Link>
       </button>
-    </>
+    </div>
   );
 }

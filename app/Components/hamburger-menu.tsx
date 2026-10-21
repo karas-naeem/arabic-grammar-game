@@ -15,7 +15,7 @@ export default function HamburgerMenu() {
           border: "none",
           background: "transparent",
           color: "white",
-          fontFamily: "thulth",
+          fontFamily: "arial",
           cursor: "pointer",
         }}
       >

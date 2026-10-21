@@ -11,7 +11,7 @@
 }
 
 * {
-  font-family: thulth;
+  font-family: arial;
 }
 
 html {
@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -43,7 +43,7 @@ body {
   margin: 0;
 }
 
-a{
+a {
   color: #fff;
   text-decoration: none;
 }
@@ -92,12 +92,12 @@ a{
     :scope {
       font-size: 1.25rem;
     }
-    
+
     a {
       text-decoration: none;
     }
-    @media (max-width:768px){
-      a{
+    @media (max-width: 768px) {
+      a {
         color: var(--foreground) !important;
       }
     }
@@ -122,9 +122,18 @@ a{
   }
 }
 
+/* dark & light mood */
+
+@media (prefers-color-scheme: dark) {
+  .logoImage {
+    filter: invert();
+  }
+}
+
+
 /* font */
 
 @font-face {
-  font-family: thulth;
-  src: url(../public/font.ttf);
+  font-family: arial;
+  src: url(../public/rubik.ttf);
 }

@@ -4,9 +4,9 @@
     padding-bottom: 5%;
     /* position */
     position: absolute;
-    top: 100%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%,-90%);
+    transform: translate(-50%,-0%);
   }
   ul {
     list-style: decimal;

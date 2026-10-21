@@ -68,34 +68,38 @@ export default function DragGame({ Data }: IDragGame) {
         onDrop={(e) => {
           // styles
           drag[0].style.width = "80%";
-          drag[0].style.marginBottom = "5px";
           drag[0].style.listStyle = "none";
           drag[0].style.borderRadius = "5px";
+          drag[0].style.transform = "translate(-50%,0)";
+          // position
           drag[0].style.position = "relative";
           drag[0].style.left = "50%";
-          drag[0].style.transform = "translate(-50%,0)";
           // colors
           drag[0].style.background = "#000";
           drag[0].style.color = "#FFF";
+          // box model
+          drag[0].style.marginBottom = "5px";
+          drag[0].style.padding = "5px";
           // appending
-
           e.currentTarget.append(drag[0]);
           Drop(i);
         }}
         onTouchStart={(e) => {
           // styles
           drag[0].style.width = "80%";
-          drag[0].style.marginBottom = "5px";
           drag[0].style.listStyle = "none";
           drag[0].style.borderRadius = "5px";
+          drag[0].style.transform = "translate(-50%,0)";
+          // position
           drag[0].style.position = "relative";
           drag[0].style.left = "50%";
-          drag[0].style.transform = "translate(-50%,0)";
           // colors
           drag[0].style.background = "#000";
           drag[0].style.color = "#FFF";
+          // box model
+          drag[0].style.marginBottom = "5px";
+          drag[0].style.padding = "5px";
           // appending
-
           e.currentTarget.append(drag[0]);
           Drop(i);
         }}
@@ -112,7 +116,7 @@ export default function DragGame({ Data }: IDragGame) {
         onSubmit={(e) => {
           e.preventDefault();
           const newAnswerData = Data.Items.map((eP, aP) => {
-            console.log(eP,aP)
+            console.log(eP, aP);
             if (eP.where === AnswerWhere[aP]) {
               return [1];
             } else {
@@ -120,11 +124,11 @@ export default function DragGame({ Data }: IDragGame) {
             }
           });
           console.log(newAnswerData);
-          SetAnswerData([...answerData,newAnswerData]);
+          SetAnswerData([...answerData, newAnswerData]);
         }}
       >
         <div className="DragGame">{PlacesJSX}</div>
-        <button type="submit">سلّم</button>
+        <button type="submit">التالي</button>
       </form>
     </div>
   );

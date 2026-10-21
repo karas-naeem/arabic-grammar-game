@@ -7,6 +7,9 @@
       margin-top:30vh;
     }
   }
+  h2{
+    margin-bottom: 7.5px;
+  }
   @scope(form){
     :scope{
       display: flex;
@@ -57,6 +60,7 @@
           }
           li {
             color: #FFF;
+            padding: 5px;
             margin-bottom: 5px;
             width: 80%;
             border-radius: 5px;

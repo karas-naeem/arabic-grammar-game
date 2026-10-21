@@ -11,9 +11,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .logoImage {
-    filter: invert();
-  }
   .page {
     --background: #000;
     --foreground: #FFF;

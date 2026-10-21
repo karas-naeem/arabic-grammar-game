@@ -97,7 +97,7 @@ export default function CompleteGame({ Name, Data }: ICompleteGame) {
           );
         })}
 
-        <button type="submit">سلّم</button>
+        <button type="submit">التالي</button>
       </form>
     </div>
   );
